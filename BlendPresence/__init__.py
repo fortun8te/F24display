@@ -287,7 +287,7 @@ def updatePresence():
             if prefs.enableDetails:
                 if prefs.detailsType == "literal":
                     if prefs.displayFileName and getFileName():
-                        detailsText = f"Grilling {getFileName()}.blend"
+                        detailsText = f"Cooking up{getFileName()}.blend"
                     else:
                         detailsText = f"Seasoning, Grilling and Marinating"
                 else:
@@ -312,7 +312,7 @@ def updatePresence():
                     if prefs.displayFileName and getFileName():
                         detailsText = f"{getFileName()}.blend"
                     else:
-                        detailsText = "Cooking up a project"
+                        detailsText = "Turning on the heat"
                 else:
                     detailsText = evalCustomText(prefs.detailsCustomText)
             else:
