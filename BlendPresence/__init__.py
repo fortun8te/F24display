@@ -287,9 +287,9 @@ def updatePresence():
             if prefs.enableDetails:
                 if prefs.detailsType == "literal":
                     if prefs.displayFileName and getFileName():
-                        detailsText = f"Rendering {getFileName()}.blend"
+                        detailsText = f"Grilling {getFileName()}.blend"
                     else:
-                        detailsText = f"Rendering a project"
+                        detailsText = f"Seasoning, Grilling and Marinating"
                 else:
                     detailsText = str(prefs.detailsCustomText)
                 
