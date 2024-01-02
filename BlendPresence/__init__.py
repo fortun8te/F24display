@@ -97,7 +97,7 @@ def getPolyCount():
     for e in bpy.context.scene.objects:
         if e.type == "MESH":
             count += len(e.data.polygons)
-    return f"{count:,d} total polys"
+    return f"{count:,d} Units in Operation"
 
 def getBoneCount():
     count = 0
@@ -312,7 +312,7 @@ def updatePresence():
                     if prefs.displayFileName and getFileName():
                         detailsText = f"{getFileName()}.blend"
                     else:
-                        detailsText = "Working on a project"
+                        detailsText = "Cooking up a project"
                 else:
                     detailsText = evalCustomText(prefs.detailsCustomText)
             else:
